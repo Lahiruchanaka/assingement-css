@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Supermarket</title>
+    <link rel="stylesheet" href="assests/css/bootstrap.css">
+    <style>
+        body {
+            overflow: hidden;
+        }
+        .carousel-item {
+            height: 31vh;
+            background: black;
+        }
+        .carousel-item > img {
+            object-fit: cover;
+            opacity: 50%;
+        }
+        .btn {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+        }
+    </style>
+</head>
+<body>
+
+<!--Nav bar-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Supermarket</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link" href="customer.html">Customers</a>
+                <a class="nav-link" href="item.html">Items</a>
+                <a class="nav-link" href="order.html">Order</a>
+
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<!--Order Slider-->
+<div class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="assests/img/happy-female-cashier.jpg" class="d-block w-100" alt="Cashier">
+        </div>
+        <div class="carousel-item">
+            <img src="assests/img/beautiful-cash-counter.jpg" class="d-block w-100" alt="Cashier picture">
+        </div>
+    </div>
+    <a href="order.html"><button type="button" class="btn btn-outline-info" >Order </button></a>
+</div>
+
+
+<!--Customer Slider-->
+<div class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="assests/img/happy-family-paying.jpg" class="d-block w-100" alt="Cashier">
+        </div>
+        <div class="carousel-item">
+            <img src="assests/img/beautiful-cash-counter.jpg" class="d-block w-100" alt="Cashier picture">
+        </div>
+    </div>
+    <a href="customer.html"> <button type="button" class="btn btn-outline-info" >Customers</button> </a>
+</div>
+
+
+<!--Item Slider-->
+<div class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="assests/img/1624848.jpg" class="d-block w-100" alt="Cashier">
+        </div>
+        <!--<div class="carousel-item">
+            <img src="assests/img/beautiful-cash-counter.jpg" class="d-block w-100" alt="Cashier picture">
+        </div>-->
+    </div>
+    <a href="item.html"> <button type="button" class="btn btn-outline-info" >Items</button> </a>
+</div>
+
+
+</body>
+</html>

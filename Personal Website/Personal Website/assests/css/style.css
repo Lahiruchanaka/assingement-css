@@ -1,0 +1,794 @@
+body {
+    overflow-x: hidden;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#pageHome {
+    width: 100vw;
+    height: 100vh;
+}
+#pageHome img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+#menuBar {
+    width: 100vw;
+    height: 50px;
+    background: #222F3E;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+#menuBarList {
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 25px;
+    display: flex;
+}
+#menuBarList > div {
+
+}
+#menuBarList > div:hover > div {
+    animation: 5s lineAni infinite;
+}
+@keyframes lineAni {
+    0% {
+        background: #991006;
+        width: 0;
+    }
+    100% {
+        background: #991006;
+        width: 100%;
+    }
+}
+#menuBarList > div > a {
+    color: #F5F6FA;
+    text-decoration: none;
+    margin: 15px;
+    font-family: 'Scope One', serif;
+    font-size: 20px;
+    width: fit-content;
+    height: fit-content;
+}
+#menuBarList > div > div {
+    width: 100%;
+    height: 3px;
+    background: #222F3E;
+}
+
+
+#pageHome > div {
+    position: absolute;
+    top: 130px;
+    left: -90px;
+}
+
+#name {
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 96px;
+    color: #E5E4E2;
+}
+
+#softwareEngineer {
+    font-family: 'Scope One', serif;
+    font-size: 30px;
+    position: relative;
+    bottom: 40px;
+    letter-spacing: 20px;
+}
+
+
+/*===================================About Page===================================*/
+
+/*+++++background img+++++*/
+#pageAbout {
+    width: 100vw;
+    height: 100vh;
+    /*background: #222F3E;*/
+    position: absolute;
+    top: 100vh;
+}
+#pageAbout > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 80%;
+}
+
+/*+++++Left side+++++*/
+#pageAbout > aside:nth-child(2) {
+    width: 35%;
+    height: 85%;
+    /*background-color: aqua;*/
+    position: absolute;
+    top: 80px;
+}
+
+#pageAbout > aside:nth-child(2) > img {
+    width: 350px;
+    height: auto;
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+#pageAbout > aside:nth-child(2) > article {
+    width: fit-content;
+    height: 35px;
+    /*background-color: darkblue;*/
+    position: absolute;
+    bottom: 30px;
+    right: 40px;
+}
+#pageAbout > aside:nth-child(2) > article > a > img {
+    height: 100%;
+    width: auto;
+    margin-right: 25px;
+    opacity: 60%;
+}
+.imgFb:hover {
+    animation: 1s imgAni;
+}
+.imgLinkedin:hover {
+    animation: 1s imgAni;
+}
+.imgTwitter:hover {
+    animation: 1s imgAni;
+}
+.imgInstagram:hover {
+    animation: 1s imgAni;
+}
+@keyframes imgAni {
+    0%{
+        opacity: 80%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+/*+++++Right side+++++*/
+#pageAbout > aside:nth-child(3) {
+    width: 50%;
+    height: 75%;
+    /*background-color: aqua;*/
+    position: absolute;
+    top: 80px;
+    right: 130px;
+}
+#pageAbout > aside:nth-child(3) > h1 {
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 96px;
+    color: #F5F6FA;
+    margin-top: 0;
+    margin-bottom: 20px;
+    position: relative;
+}
+#pageAbout > aside:nth-child(3) > p {
+    font-family: 'Scope One', serif;
+    font-size: 20px;
+    color: #F5F6FA;
+}
+#pageAbout > aside:nth-child(3) > .personalInfo {
+    margin-top: 50px;
+    width: 100%;
+    height: 30%;
+    /*background-color: #222F3E;*/
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+#pageAbout > aside:nth-child(3) > .personalInfo > div > p {
+    font-family: 'Scope One', serif;
+    font-size: 20px;
+    color: #F5F6FA;
+}
+
+/*+++++Button+++++*/
+.aboutPageButton {
+    position: absolute;
+    bottom: 12px;
+}
+.aboutPageButton > button {
+    width: 150px;
+    height: 50px;
+    background: #808080;
+    border: 0;
+    margin-right: 15px;
+}
+.aboutPageButton > button > a {
+    font-family: 'Scope One', serif;
+    font-size: 20px;
+    color: #F5F6FA;
+    text-decoration: none;
+}
+
+
+/*===================================Education Page===================================*/
+
+/*+++++Background+++++*/
+#pageEducation {
+    width: 100vw;
+    height: 100vh;
+    background-color: #222F3E;
+    position: absolute;
+    top: 200vh;
+}
+#pageEducation > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 30%;
+}
+
+/*+++++Title+++++*/
+#titleEdu {
+    width: fit-content;
+    height: fit-content;
+    /*background-color: darkblue;*/
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+#titleEdu > h1 {
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 96px;
+    color: #F5F6FA;
+    margin: 0;
+}
+
+/*+++++Education info+++++*/
+#EducationInfo {
+    width: 70%;
+    height: 60%;
+    /*background: green;*/
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0px;
+}
+
+#EducationInfo > div {
+    /*border: 1px solid red*/;
+}
+#EducationInfo > .infoLeftside {
+    padding-right: 30px;
+}
+#EducationInfo > .infoRightside {
+    padding-left: 30px;
+}
+#EducationInfo > div > p {
+    font-family: 'Scope One', serif;
+    font-size: 20px;
+    color: #F5F6FA;
+}
+#EducationInfo > .infoLeftside > p {
+    text-align: right;
+}
+#EducationInfo > div > .eduLevel {
+    color: #FFA500;
+}
+
+
+/*===================================Skill Page===================================*/
+
+/*+++++Background+++++*/
+#pageSkill {
+    width: 100vw;
+    height: 100vh;
+    background: #222F3E;
+    position: absolute;
+    top: 300vh;
+}
+#pageSkill > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 5%;
+}
+
+/*+++++Title+++++*/
+#titleSkill {
+    width: fit-content;
+    height: fit-content;
+    /*background-color: darkblue;*/
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+#titleSkill > h1 {
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 96px;
+    color: #F5F6FA;
+    margin: 0;
+}
+
+/*+++++Skills+++++*/
+#skills {
+    width: 90%;
+    height: 50%;
+    /*background: #222F3E;*/
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-row: fit-content;
+    grid-gap: 0px;
+}
+#skills > div {
+    /*border: 1px solid red;*/
+}
+#skills > div > .bar {
+    width: 100%;
+    height: 2px;
+    background: #353b48;
+    margin-top: 7px;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 3px;
+    box-shadow: 0 0 10px #2187e7b3;
+}
+
+/*+++++Skills Info Left+++++*/
+.skillInfoLeft > p {
+    text-align: right;
+    font-family: 'Scope One', serif;
+    font-size: 20px;
+    color: #F5F6FA;
+    padding-right: 20px;
+}
+
+/*+++++Skills Info Right+++++*/
+.skillInfoRight > p {
+    font-family: 'Scope One', serif;
+    font-size: 20px;
+    color: #F5F6FA;
+    padding-left: 20px;
+}
+
+
+/*+++++Skills Info Center(bar)+++++*/
+.javaBar {
+    width: 70%;
+    height: 2px;
+    background: #4CD137;
+    animation: 2s javaAni;
+}
+@keyframes javaAni {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 70%;
+    }
+}
+
+
+.javafxBar {
+    width: 80%;
+    height: 2px;
+    background: #4CD137;
+    animation: 2s javafxAni;
+}
+@keyframes javafxAni {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 80%;
+    }
+}
+
+
+.htmlBar {
+    width: 95%;
+    height: 2px;
+    background: #4CD137;
+    animation: 2s htmlAni;
+}
+@keyframes htmlAni {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 80%;
+    }
+}
+
+
+.cssBar {
+    width: 91%;
+    height: 2px;
+    background: #4CD137;
+    animation: 2s cssAni;
+}
+@keyframes cssAni {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 91%;
+    }
+}
+
+
+.photoshopBar {
+    width: 40%;
+    height: 2px;
+    background: #4CD137;
+    animation: 2s photoshopAni;
+}
+@keyframes photoshopAni {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 40%;
+    }
+}
+
+
+/*+++++Skills Icons+++++*/
+#skillIcons {
+    width: fit-content;
+    height: 70px;
+    /*background: darkblue;*/
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+#skillIcons > img {
+    height: 100%;
+    margin-right: 35px;
+}
+
+
+/*===================================Projects Page===================================*/
+
+/*+++++Background+++++*/
+#pageProjects {
+    width: 100vw;
+    height: 100vh;
+    background: #222F3E;
+    position: absolute;
+    top: 400vh;
+}
+#pageProjects > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 20%;
+}
+
+/*+++++Title+++++*/
+#titleProject {
+    width: fit-content;
+    height: fit-content;
+    /*background-color: darkblue;*/
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+#titleProject > h1 {
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 96px;
+    color: #F5F6FA;
+    margin: 0;
+}
+
+/*+++++Projects slider+++++*/
+#projectSlide {
+    width: fit-content;
+    height: fit-content;
+    /*background: aqua;*/
+    display: flex;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#projectSlide > div {
+    width: 250px;
+    height: 250px;
+    /*background: yellow;*/
+    border: 1px solid white;
+    margin-right: 10px;
+}
+
+/*+++++ Projects slider 01 +++++*/
+#projectSlide > #slide1 {
+    background-image: url("../img/java-img.png");
+    background-size: 100% 100%;
+}
+#projectSlide > #slide1:hover {
+    animation: slider1 5s infinite;
+}
+@keyframes slider1 {
+    50% {
+        background-image: url("../img/javaFx - img.png");
+        background-size: 100% 100%;
+    }
+    100% {
+        background-image: url("../img/javaFx - img.png");
+        background-size: 100% 100%;
+    }
+}
+
+/*+++++ Projects slider 02 +++++*/
+#projectSlide > #slide2 {
+    background-image: url("../img/html5-1.jpg");
+    background-size: 100% 100%;
+}
+#projectSlide > #slide2:hover {
+    animation: slider2 5s infinite;
+}
+@keyframes slider2 {
+    50% {
+        background-image: url("../img/css - img.jpg");
+        background-size: 100% 100%;
+    }
+    100% {
+        background-image: url("../img/css - img.jpg");
+        background-size: 100% 100%;
+    }
+}
+
+/*+++++ See more +++++*/
+#seemore {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, 600%);
+    text-decoration: none;
+}
+#seemore > p {
+    font-family: 'Scope One', serif;
+    font-size: 20px;
+    color: #F5F6FA
+}
+#seemore > p:hover {
+    animation: seemoreAni 2s;
+}
+@keyframes seemoreAni {
+    100% {
+        color: #4CD137;
+    }
+}
+
+/*+++++ clients-project-experience +++++*/
+#counts {
+    width: 500px;
+    height: 60px;
+    /*background: green;*/
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0;
+}
+
+#counts > div {
+    /*border: 1px solid red;*/
+}
+#counts > div > h1 {
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 50px;
+    color: #F5F6FA;
+    margin: 0;
+    text-align: center;
+}
+#counts > div > p {
+    font-family: 'Scope One', serif;
+    color: #4CD137;
+    margin: 0;
+    text-align: center;
+}
+.seperateBar {
+    border-right: 2px solid #4CD137;
+}
+
+
+
+/*===================================Contact Page===================================*/
+
+/*+++++Background+++++*/
+#pageContact {
+    width: 100vw;
+    height: 100vh;
+    background: #222F3E;
+    position: absolute;
+    top: 500vh;
+}
+#pageContact > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 40%;
+}
+
+/*+++++Title+++++*/
+#titleContact {
+    width: fit-content;
+    height: fit-content;
+    /*background-color: darkblue;*/
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+#titleContact > h1 {
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 85px;
+    color: #F5F6FA;
+    margin: 0;
+}
+
+/*+++++ Contact content+++++*/
+#contactContent {
+    width: 70%;
+    height: 50%;
+    /*background: #353b48;*/
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0;
+}
+#contactContent > aside {
+    /*border: 1px solid red;*/
+}
+
+/*+++++ Left Side +++++*/
+#leftAside > p {
+    font-family: 'Scope One', serif;
+    font-size: 15px;
+    color: #F5F6FA;
+    margin: 0;
+}
+#leftAside > .contactTopic {
+    color: #4CD137;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+/*+++++ SocalMedia Images +++++*/
+#leftAside > .socialMedia {
+    height: 40px;
+    width: 50%;
+    /*background: darkblue;*/
+    position: absolute;
+    bottom: 20px;
+}
+#leftAside > .socialMedia > a > img{
+    height: 100%;
+    width: auto;
+    margin-right: 25px;
+    opacity: 60%;
+}
+
+/*+++++ Right Side +++++*/
+#rightAside {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+#rightAside > div {
+    /*border: 1px solid aqua;*/
+}
+
+#rightAside > .row1 > input {
+    width: 100%;
+    height: 100%;
+    color: black;
+    font-family: 'Scope One', serif;
+    font-size: 15px;
+}
+
+#rightAside > .row2 {
+    grid-column: 1/3;
+}
+#rightAside > .row2 > input {
+    width: 100%;
+    height: 100%;
+    color: black;
+    font-family: 'Scope One', serif;
+    font-size: 15px;
+}
+
+#rightAside > .row3 {
+    grid-column: 1/3;
+    grid-row: 3/6;
+}
+#rightAside > .row3 > input {
+    width: 100%;
+    height: 100%;
+    color: black;
+    font-family: 'Scope One', serif;
+    font-size: 15px;
+}
+#rightAside > .row3 > input::-webkit-input-placeholder {
+
+}
+
+#rightAside > .row4 {
+    grid-column: 1/3;
+}
+#rightAside > .row4 > button {
+    width: 100%;
+    height: 100%;
+    background: #4CD137;
+    font-family: 'Scope One', serif;
+    font-size: 15px;
+    color: #F5F6FA;
+    border: 0;
+}
+
+/*+++++ Footer +++++*/
+#footer {
+    width: 100%;
+    height: 40px;
+    background: #222F3E;
+    position: absolute;
+    bottom: 0;
+}
+#footer > p {
+    font-family: 'Scope One', serif;
+    font-size: 15px;
+    color: #F5F6FA;
+    width: max-content;
+    height: max-content;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+
+

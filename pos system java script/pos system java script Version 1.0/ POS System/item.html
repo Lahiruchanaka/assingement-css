@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Item</title>
+    <link rel="stylesheet" href="assests/css/bootstrap.css">
+    <style>
+        #customerForm {
+            width: 90vw;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-top: 25px;
+            margin-bottom: 50px;
+        }
+        #customerTable {
+            width: 95vw;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-bottom: 75px;
+        }
+        .search {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<!--Nav bar-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Supermarket</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="customer.html">Customers</a>
+                <a class="nav-link" href="item.html">Items</a>
+                <a class="nav-link" href="order.html">Order</a>
+
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+
+<!--Form-->
+<form id="customerForm">
+    <div class="mb-3">
+        <label for="exampleInputCustomerId" class="form-label">Item Code</label>
+        <input type="text" class="form-control" id="exampleInputCustomerId" aria-describedby="emailHelp">
+    </div>
+
+    <div class="mb-3">
+        <label for="exampleInputCustomerName" class="form-label">Item Name</label>
+        <input type="text" class="form-control" id="exampleInputCustomerName" aria-describedby="emailHelp">
+    </div>
+
+    <div class="mb-3">
+        <label for="exampleInputCustomerAddress" class="form-label">Unit Price</label>
+        <input type="text" class="form-control" id="exampleInputCustomerAddress" aria-describedby="emailHelp">
+    </div>
+
+    <div class="mb-3">
+        <label for="exampleInputContact" class="form-label">Qty On Hand</label>
+        <input type="text" class="form-control" id="exampleInputContact" aria-describedby="emailHelp">
+    </div>
+
+    <div></div>
+    <!--<div class="d-grid gap-2">-->
+        <button class="btn btn-primary" type="button">Save Item</button>
+        <button class="btn btn-primary" type="button">Cancel</button>
+    <!--</div>-->
+
+    <div class="col search">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Search Item" aria-label="Recipient's username"
+                   aria-describedby="button-addon2">
+            <button class="btn btn-primary" type="button" id="button-addon2">Search</button>
+        </div>
+    </div>
+</form>
+
+
+
+<table class="table table-hover" id="customerTable">
+    <tr>
+        <th>Item Code</th>
+        <th>Item Name</th>
+        <th>Unit Price</th>
+        <th>Qty On Hand</th>
+    </tr>
+
+    <tr>
+        <td>P001</td>
+        <td>Keerisamba Retail</td>
+        <td>105.00</td>
+        <td>3000</td>
+    </tr>
+
+    <tr>
+        <td>P002</td>
+        <td>Wattana Dhal 500g</td>
+        <td>90.00</td>
+        <td>83</td>
+    </tr>
+
+    <tr>
+        <td>P003</td>
+        <td>Anchor F/C Milk powder 450g</td>
+        <td>220.00</td>
+        <td>93</td>
+    </tr>
+</table>
+
+</body>
+</html>
